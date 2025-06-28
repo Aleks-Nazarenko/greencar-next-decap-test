@@ -1,0 +1,47 @@
+local_backend: true     # enable local file writes
+backend:
+  name: git-gateway     # still needed to drive proxy-server
+
+media_folder: "public/uploads"          # where uploaded files go (inside the repo)
+public_folder: "/uploads"               # how they're referenced in the site
+
+publish_mode: editorial_workflow        # optional: enables drafts + PR review
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: menus
+    label: Menus
+    folder: data/menus
+    extension: json
+    format: json
+    fields:
+      - label: Items
+        name: items
+        widget: list
+        fields:
+          - { label: Label, name: label, widget: string }
+          - { label: URL, name: url, widget: string }
