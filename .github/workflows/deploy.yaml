@@ -3,7 +3,7 @@ name: Build and Deploy Greencar Next.js + Decap
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'content/**'
       - 'data/**'
