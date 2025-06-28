@@ -45,3 +45,60 @@ collections:
         fields:
           - { label: Label, name: label, widget: string }
           - { label: URL, name: url, widget: string }
+  - name: "startseite"
+    label: "Startseite"
+    files:
+      - label: "Startseite Inhalt"
+        name: "home"
+        file: "content/startseite.md"
+        fields:
+          - { label: "Seitentitel", name: "title", widget: "string" }
+
+          - label: "Hero Bereich"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "heading", widget: "string" }
+              - { label: "Subtext1", name: "subtext1", widget: "text" }
+              - { label: "Subtext 2", name: "subtext2", widget: "text" }
+              - { label: "Subtext 3", name: "subtext3", widget: "text" }
+              - { label: "Hintergrundbild", name: "background", widget: "image" }
+
+          - label: "Leistungen (Cards)"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschreibung", name: "description", widget: "text" }
+              - { label: "Button Text", name: "button", widget: "string" }
+              - { label: "Button Link", name: "link", widget: "string" }
+
+          - label: "Filterarten (Icons)"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Bild", name: "icon", widget: "image" }
+
+          - label: "FAQ Accordion"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Frage", name: "question", widget: "string" }
+              - { label: "Antwort", name: "answer", widget: "markdown" }
+
+          - label: "Team Bilder"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Bild", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+
+          - label: "Standort Karte"
+            name: "map_embed"
+            widget: "text"
+            hint: "HTML Embed-Code für Karte einfügen"
+
+          - label: "Über Greencar"
+            name: "about"
+            widget: "markdown"
