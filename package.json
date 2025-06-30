@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "gray-matter": "^4.0.3",
     "next": "15.3.4",
     "react": "^19.0.0",

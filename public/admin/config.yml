@@ -75,24 +75,53 @@ collections:
 
           - label: "Filterarten (Icons)"
             name: "services"
-            widget: "list"
+            widget: "object"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Bild", name: "icon", widget: "image" }
+              - label: "Überschrift"
+                name: "heading"
+                widget: "string"
+                required: false
+                default: ""
+
+              - label: "Filterarten (Liste)"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Bild", name: "icon", widget: "image" }
 
           - label: "FAQ Accordion"
             name: "faq"
             widget: "list"
             fields:
               - { label: "Frage", name: "question", widget: "string" }
-              - { label: "Antwort", name: "answer", widget: "markdown" }
+              - { label: "Antwort", name: "answer", widget: "markdown", rich_text: true, required: false, default: "" }
+
+          - label: "Accordion Image"
+            name: "accordion_image"
+            widget: "image"
 
           - label: "Team Bilder"
             name: "team"
             widget: "list"
             fields:
-              - { label: "Bild", name: "image", widget: "image" }
-              - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Typ"
+                name: "media_type"
+                widget: "select"
+                options: ["image", "video"]
+                default: "image"
+
+              - label: "Bild"
+                name: "image"
+                widget: "image"
+                required: false
+                hint: "Wird nur verwendet, wenn Typ 'image' ist"
+
+              - label: "Video"
+                name: "video"
+                widget: "file"
+                required: false
+                hint: "Wird nur verwendet, wenn Typ 'video' ist"
 
           - label: "Standort Karte"
             name: "map_embed"
@@ -102,3 +131,24 @@ collections:
           - label: "Über Greencar"
             name: "about"
             widget: "markdown"
+            rich_text: true
+            required: false
+            default: ""
+
+          - label: "Footer"
+            name: "footer"
+            widget: "list"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link URL", name: "url", widget: "string" }
+
+          - label: "Hero Bereich Beispiel"
+            name: "hero_example"
+            widget: "object"
+            fields:
+              - { label: "Überschrift", name: "heading", widget: "string", required: false }
+              - label: "Subtexte"
+                name: "subtexts"
+                widget: "list"
+                field: { label: "Textzeile", name: "text", widget: "string" }
+              - { label: "Hintergrundbild", name: "background", widget: "image", required: false  }

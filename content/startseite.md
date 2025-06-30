@@ -34,20 +34,22 @@ cards:
     button: Hersteller wählen
     title: PKW Nachrüstung & Austausch
 services:
-  - name: Bau Filterreinigung
-    icon: /uploads/green-bau-filterreinigung.svg
-  - name: Bau Nachrüstfilter
-    icon: /uploads/green-bau-nachruestfilter.svg
-  - name: Bus Austauschfilter
-    icon: /uploads/green-bus-austauschfilter.svg
-  - name: Bus Filterreinigung
-    icon: /uploads/green-bus-filterreinigung.svg
-  - name: LKW Austauschfilter
-    icon: /uploads/green-lkw-austauschfilter.svg
-  - name: LKW Filterreinigung
-    icon: /uploads/green-lkw-filterreinigung.svg
-  - name: PKW Austauschfilter
-    icon: /uploads/green-pkw-austauschfilter.svg
+  heading: Wählen Sie die passende Leistung
+  items:
+    - name: Bau Filterreinigung
+      icon: /uploads/green-bau-filterreinigung.svg
+    - name: Bau Nachrüstfilter
+      icon: /uploads/green-bau-nachruestfilter.svg
+    - name: Bus Austauschfilter
+      icon: /uploads/green-bus-austauschfilter.svg
+    - name: Bus Filterreinigung
+      icon: /uploads/green-bus-filterreinigung.svg
+    - name: LKW Austauschfilter
+      icon: /uploads/green-lkw-austauschfilter.svg
+    - name: LKW Filterreinigung
+      icon: /uploads/green-lkw-filterreinigung.svg
+    - name: PKW Austauschfilter
+      icon: /uploads/green-pkw-austauschfilter.svg
 faq:
   - question: Warum Partikelfilter reinigen lassen?
     answer: >-
@@ -59,12 +61,36 @@ faq:
   - question: So funktioniert die GREENCAR Reinigung
     answer: GREENCAR wurde 2009 in Berlin von **Mirco Ortlieb** gegründet – mit dem
       Ziel, durch innovative Nachrüstlösungen aktiv zur Verbesserung
+accordion_image: /uploads/filterreinigung.png
 team:
-  - image: /uploads/team-mirco.jpg
-    alt: Mirco
-map_embed: '<iframe src="greencar_karte_komplett_mit_grenzen_3.html"
-  title="GREENCAR Karte" allowfullscreen style="border:0;border-radius:
-  15px;"></iframe>'
+  - media_type: image
+    image: /uploads/team-mirco.jpg
+  - media_type: video
+    video: /uploads/video-mirco5.mp4
+map_embed: |
+    <iframe
+      src="/greencar_karte_komplett_mit_grenzen_3.html"
+      title="GREENCAR Karte"
+      allowfullscreen
+      style="border:0;width:100%;border-radius:15px;"
+    ></iframe>
 about: "**GREENCAR wurde 2009** in Berlin von Mirco Ortlieb gegründet – mit dem
   Ziel, durch innovative Nachrüstlösungen aktiv zur Verbesserung"
+footer:
+  - url: "#"
+    logo: /uploads/logo-atu.png
+  - url: "#"
+    logo: /uploads/logo-euromaster.png
+  - logo: /uploads/logo-kraft.png
+    url: "#"
+  - url: "#"
+    logo: /uploads/logo-premio.png
+  - logo: /uploads/logo-reifen.png
+    url: "#"
+  - logo: /uploads/logo-techno.png
+    url: "#"
+  - logo: /uploads/logo-vergoelst.png
+    url: "#"
+  - logo: /uploads/logo-winkler.png
+    url: "#"
 ---
