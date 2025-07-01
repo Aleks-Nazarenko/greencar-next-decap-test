@@ -68,14 +68,16 @@ team:
   - media_type: video
     video: /uploads/video-mirco5.mp4
 map_embed: |
-    <iframe
-      src="/greencar_karte_komplett_mit_grenzen_3.html"
-      title="GREENCAR Karte"
-      allowfullscreen
-      style="border:0;width:100%;border-radius:15px;"
-    ></iframe>
-about: "**GREENCAR wurde 2009** in Berlin von Mirco Ortlieb gegründet – mit dem
-  Ziel, durch innovative Nachrüstlösungen aktiv zur Verbesserung"
+  <iframe
+    src="/greencar_karte_komplett_mit_grenzen_3.html"
+    title="GREENCAR Karte"
+    allowfullscreen
+    style="border:0;width:100%;border-radius:15px;"
+  ></iframe>
+about: GREENCAR wurde 2009 in Berlin von Mirco Ortlieb gegründet – mit dem Ziel,
+  durch innovative Nachrüstlösungen aktiv zur Verbesserung der Luftqualität
+  beizutragen. Seither wurden über 18.000 Fahrzeuge erfolgreich mit
+  Partikelfiltern und Katalysatoren ausgestattet.
 footer:
   - url: "#"
     logo: /uploads/logo-atu.png
