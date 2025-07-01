@@ -1,0 +1,5 @@
+1;category;sub_category;product_name;product_code;product_price;einbau_price;images;hersteller;modell_liste;euronorm2_liste;bestellnr;voraus;oe_nummer_liste;hinweis_lkw;system_liste
+2;VW;Beetle;Partikelfilter GR33-2100 AN;GR33-2100-an;300.00;19.00;93112011.jpg;VW;versch. Modelle;Euro VI;GR33-2100;20;2144435  2144435R  2192100  2192100R  2326074  2326074R  31009912  2410280  2410280R ;;
+3;VW;Passat;Partikelfilter GR33-4555 AN;GR33-4555-an;455.00;19.00;93112011.jpg,beispielphoto.jpg;VW;versch. Modelle;Euro VI;GR33-4555;20;1961522  1961522R  2137443  2137443R  5296249  574223  2274555 ;;
+3;BMW;1er Serie;Partikelfilter GR33-4555 AN;GR33-4556-an;420.00;19.00;93112011.jpg,beispielphoto.jpg;VW;versch. Modelle;Euro VI;GR33-4555;20;1961522  1961522R  2137443  2137443R  5296249  574223  2274555 ;;
+3;BMW;3er Serie;Partikelfilter GR33-4555 AN;GR33-4557-an;400.00;19.00;93112011.jpg,beispielphoto.jpg;VW;versch. Modelle;Euro VI;GR33-4555;20;1961522  1961522R  2137443  2137443R  5296249  574223  2274555 ;;

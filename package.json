@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "convert": "node scripts/convert-csv-to-json.js",
+    "build": "npm run convert && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,6 +13,7 @@
     "aos": "^2.3.4",
     "gray-matter": "^4.0.3",
     "next": "15.3.4",
+    "papaparse": "^5.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remark": "^15.0.1",

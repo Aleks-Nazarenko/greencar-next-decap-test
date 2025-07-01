@@ -45,6 +45,8 @@ collections:
         fields:
           - { label: Label, name: label, widget: string }
           - { label: URL, name: url, widget: string }
+
+
   - name: "startseite"
     label: "Startseite"
     files:
@@ -152,3 +154,4 @@ collections:
                 widget: "list"
                 field: { label: "Textzeile", name: "text", widget: "string" }
               - { label: "Hintergrundbild", name: "background", widget: "image", required: false  }
+
