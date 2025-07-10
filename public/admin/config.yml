@@ -110,7 +110,7 @@ collections:
               - label: "Typ"
                 name: "media_type"
                 widget: "select"
-                options: ["image", "video"]
+                options: [ "image", "video" ]
                 default: "image"
 
               - label: "Bild"
@@ -153,5 +153,34 @@ collections:
                 name: "subtexts"
                 widget: "list"
                 field: { label: "Textzeile", name: "text", widget: "string" }
-              - { label: "Hintergrundbild", name: "background", widget: "image", required: false  }
+              - { label: "Hintergrundbild", name: "background", widget: "image", required: false }
+
+  - name: "footer"
+    label: "Footer"
+    files:
+      - label: "Footer Inhalt"
+        name: "footer"
+        file: "content/footer.md"
+        fields:
+          - label: "Partner Logos"
+            name: "partners"
+            widget: "list"
+            fields:
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+
+  - name: "navi"
+    label: "Navigation"
+    files:
+      - file: "content/navi.md"
+        label: "Navigation Menu"
+        name: "menu"
+        fields:
+          - label: "Menu Items"
+            name: "items"
+            widget: "list"
+            sortable: true
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
 

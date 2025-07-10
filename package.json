@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap": "^5.3.7",
     "gray-matter": "^4.0.3",
     "next": "15.3.4",
     "papaparse": "^5.5.3",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
   }
 }
